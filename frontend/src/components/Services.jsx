@@ -9,19 +9,20 @@ import { dimentia } from "../assets";
 import { viewmoreservices } from "../assets";
 import { companionship } from "../assets";
 import { veterancare } from "../assets";
+import { Link } from "react-router-dom";
 
 const Services = () => {
   return (
     <div className="bg-white w-full flex flex-col justify-center items-center pb-20  px-2">
       <div className="flex md:flex-row flex-col justify-around w-[50vw] mt-[-100px] z-10 mb-20 gap-2 ">
-        <div className="flex flex-col bg-white shadow-green shadow-2xl rounded-lg  w-[200px] h-[200px]  hover:border-blue-500 border-[0.5px] hover:border-[2px] items-center justify-center text-center gap-2 cursor-pointer">
-          <p className="flex flex-col text-[18px] ">
+        <div className="flex flex-col bg-white shadow-green shadow-2xl rounded-lg  w-[200px] h-[200px]  hover:border-blue-500 border-[0.5px] hover:border-[2px] items-center justify-center text-center gap-2 cursor-pointer" >
+          <Link  to="/bookings"><p className="flex flex-col text-[18px]">
             Schedule a Home <br />
             <span className="font-bold text-blue-500 text-[20px]">
               ASSESMENT
             </span>
           </p>
-          <CalendarMonthIcon className="text-[70px] " fontSize="" />
+          <CalendarMonthIcon className="text-[70px] " fontSize="" /></Link>
         </div>
         <div className="flex flex-col bg-white rounded-lg  w-[200px] h-[200px] shadow-green shadow-2xl hover:border-blue-500 border-[0.5px] hover:border-[2px] items-center justify-center text-center cursor-pointer gap-2">
           <p className="flex flex-col text-[18px]  ">

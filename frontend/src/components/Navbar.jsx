@@ -3,6 +3,7 @@ import { logo } from "../assets";
 import MenuIcon from "@mui/icons-material/Menu";
 import "./Navbar.css";
 import CloseIcon from "@mui/icons-material/Close";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
   const [menu, setMenu] = useState(true);
@@ -64,12 +65,14 @@ const Navbar = () => {
             className="cursor-pointer"
             onMouseEnter={() => setActive(0)}
             onMouseLeave={() => setActive(-1)}
+
           >
-            <span
+            <Link to="/">  <span
               className={`underline-animation ${active === 0 ? "active" : ""}`}
             >
               Home
-            </span>
+            </span></Link>
+          
           </li>
           <li
             className="cursor-pointer"
