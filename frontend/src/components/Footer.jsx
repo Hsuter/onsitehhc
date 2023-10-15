@@ -7,7 +7,7 @@ import { dallas } from "../assets";
 
 const Footer = () => {
   return (
-    <div className="bg-darkgreen flex flex-col  text-white items-center  ">
+    <div className="bg-darkgreen flex flex-col  text-white items-center  " id="contacts">
       {" "}
       <div className="flex md:flex-row flex-col  gap-10 justify-around border-b-2 md:mx-20 pt-4 items-center ">
         <div className="flex flex-col  md:w-auto w-full ">

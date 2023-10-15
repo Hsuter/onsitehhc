@@ -3,7 +3,7 @@ import { nursehp, graph, pills, plus } from "../assets";
 
 const Hero = () => {
   return (
-    <div className="flex md:flex-row flex-col  items-center ">
+    <div className="flex md:flex-row flex-col  items-center " >
       <div className="flex flex-col items-center md:w-[50%] w-[90%] md:pl-40">
         <p className="md:text-[50px] text-[30px] font-bold ">
           Get Convenience For Your Health Services

@@ -3,7 +3,7 @@ import { logo } from "../assets";
 import MenuIcon from "@mui/icons-material/Menu";
 import "./Navbar.css";
 import CloseIcon from "@mui/icons-material/Close";
-import { Link } from "react-router-dom";
+import { Link, useHref } from "react-router-dom";
 
 const Navbar = () => {
   const [menu, setMenu] = useState(true);
@@ -82,8 +82,8 @@ const Navbar = () => {
             {" "}
             <span
               className={`underline-animation ${active === 1 ? "active" : ""}`}
-            >
-              Services
+             >
+              <a href="#services">  Services</a>
             </span>
           </li>
           <li
@@ -117,8 +117,8 @@ const Navbar = () => {
             <span
               className={`underline-animation ${active === 4 ? "active" : ""}`}
             >
-              {" "}
-              Contact
+              <a href="#contacts">   Contact</a>
+           
             </span>
           </li>
         </ul>
